@@ -1,0 +1,15 @@
+$HOME/.config/rofi/theme.rasi
+
+* {
+    main-bg:            #1a1b1d;       /* Dark background */
+    main-fg:            #f5f5f5;       /* Light gray for the text */
+    main-br:            #f44336;       /* Spider-Man red accent */
+    main-ex:            #e91e63;       /* Pinkish red for highlight or selection */
+    select-bg:          #333333;       /* Dark gray for selected items */
+    select-fg:          #f5f5f5;       /* White text for selected items */
+    separatorcolor:     transparent;    /* No separator line */
+    border-color:       #f44336;       /* Red border */
+    border-width:       2px;            /* Slightly thick red border */
+    border-radius:      10px;           /* Rounded corners for a smoother look */
+}
+
