@@ -1,5 +1,3 @@
--- lua/plugins/neo-tree.lua
-
 return {
   {
     "nvim-neo-tree/neo-tree.nvim",
@@ -12,6 +10,7 @@ return {
     },
 
     config = function()
+      -- Keymap to toggle Neotree with <C-n>
       vim.keymap.set('n', '<C-n>', function()
         for _, win in ipairs(vim.api.nvim_list_wins()) do
           local buf = vim.api.nvim_win_get_buf(win)
@@ -23,7 +22,17 @@ return {
         end
         vim.cmd("Neotree")
       end, {})
+
+      -- Neotree setup with hidden files visible
+      require('neo-tree').setup({
+        filesystem = {
+          filtered_items = {
+            visible = true,      -- Make hidden files visible
+            hide_dotfiles = false, -- Do not hide dotfiles (e.g., .gitignore, .zshrc)
+            show_hidden_count = true, -- Show count of hidden files
+          }
+        }
+      })
     end
   }
 }
-
