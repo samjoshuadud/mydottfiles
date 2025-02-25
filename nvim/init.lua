@@ -20,7 +20,6 @@ require("plugins.neotree")        -- Neo-tree setup
 require("plugins.lualine")        -- Lualine setup
 require("plugins.lsp-config")     -- LSP configuration
 require("plugins.none-ls")        -- None LSP plugin configuration
-
 -- Switch to different window
 vim.keymap.set('n', '<C-Right>', '<C-w>l', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-Left>', '<C-w>h', { noremap = true, silent = true })
@@ -31,6 +30,8 @@ vim.keymap.set('n', '<C-Down>', '<C-w>j', { noremap = true, silent = true })
 vim.opt.fillchars = { eob = ' ' }  -- Replace empty lines with space
 
 -- Shift + H for showing hidden files
+vim.cmd("colorscheme mountain")
+vim.g.enable_mountain_statusline = 1
 
 -- Buffer management key mappings
 vim.keymap.set('n', '<C-A-Right>', ':BufferNext<CR>', { noremap = true, silent = true })  -- Go to the next buffer
