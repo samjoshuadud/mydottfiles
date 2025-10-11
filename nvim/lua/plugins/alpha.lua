@@ -32,7 +32,6 @@ return {
       [[ ██████  █████████████████████ ████ █████ █████ ████ ██████ ]],
       [[                                                                       ]],
       [[                                                                       ]],
-      [[                 Github Co-Pilot Trial Days Remaining:                 ]],
     }
 
     dashboard.section.buttons.val = {

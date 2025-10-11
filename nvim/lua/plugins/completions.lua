@@ -16,7 +16,30 @@ vim.defer_fn(function()
   vim.cmd("Copilot disable")
 end, 100)
 
-return {  
+return {
+  -- {
+  --   "olimorris/codecompanion.nvim",
+  --   opts = {},
+  --   dependencies = {
+  --     "nvim-lua/plenary.nvim",
+  --     "nvim-treesitter/nvim-treesitter",
+  --   },
+  --   config = function()
+  --     require("codecompanion").setup({
+  --       strategies = {
+  --         chat = {
+  --           adapater = "copilot",
+  --         },
+  --         inline = {
+  --           adapter = "copilot",
+  --         },
+  --         agent = {
+  --           adapter = "copilot",
+  --         },
+  --       },
+  --     })
+  --   end,
+  -- },
   {
     'hrsh7th/cmp-nvim-lsp'
   },
@@ -72,4 +95,3 @@ return {
     end,
   }
 }
-
