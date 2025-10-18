@@ -19,6 +19,5 @@ set -x PATH $JAVA_HOME/bin $PATH
 set -x GOPATH $HOME/go
 set -x PATH $GOPATH/bin $PATH
 
-
 pokemon-colorscripts --no-title --random --shiny
 
