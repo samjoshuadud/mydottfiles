@@ -56,7 +56,7 @@ vim.api.nvim_set_keymap('n', '<leader>ee', ':lua vim.diagnostic.open_float()<CR>
 vim.keymap.set("i", "jk", "<Esc>", { silent = true })
 vim.keymap.set("i", "kj", "<Esc>", { silent = true })
 
-vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>", { silent = true })
+vim.keymap.set("n", "<ESC>", ":nohlsearch<CR>", { silent = true })
 vim.keymap.set("n", "<leader>d", ":copy .<CR>", { desc = "Duplicate current line" })
 
 
