@@ -20,11 +20,15 @@ return {
     "neovim/nvim-lspconfig",
     config = function()
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
+      capabilities.workspace = capabilities.workspace or {}
+      capabilities.workspace.didChangeWatchedFiles = { dynamicRegistration = true }
+
+      capabilities.workspace.workspaceFolders = true
 
       local lspconfig = require("lspconfig")
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
-      vim.keymap.set({'n', 'v'}, '<leader>ca', vim.lsp.buf.code_action, opts)
+      vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, opts)
       -- Lua Language Server
       lspconfig.lua_ls.setup({
         capabilities = capabilities,
@@ -86,4 +90,3 @@ return {
     end,
   }
 }
-

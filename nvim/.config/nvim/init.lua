@@ -60,6 +60,11 @@ vim.keymap.set("n", "<ESC>", ":nohlsearch<CR>", { silent = true })
 vim.keymap.set("n", "<leader>d", ":copy .<CR>", { desc = "Duplicate current line" })
 
 
+--- Instant remove of marks
+vim.keymap.set("n", "<leader>m", function()
+  local mark = vim.fn.nr2char(vim.fn.getchar())
+  vim.cmd("delmarks " .. mark)
+end)
 
 
 
