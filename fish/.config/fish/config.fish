@@ -12,7 +12,7 @@ zoxide init fish | source
 set -Ux fish_user_paths "$HOME/.tmuxifier/bin" $fish_user_paths
 set -U fish_user_paths /home/punisher/.dotnet/tools $fish_user_paths
 
-set -x JAVA_HOME /usr/lib/jvm/java-24-openjdk
+set -x JAVA_HOME /usr/lib/jvm/java-21-openjdk
 set -x ANDROID_HOME ~/Android/Sdk 
 set -x PATH $PATH $ANDROID_HOME/platform-tools $ANDROID_HOME/tools $ANDROID_HOME/tools/bin
 set -x PATH $JAVA_HOME/bin $PATH
