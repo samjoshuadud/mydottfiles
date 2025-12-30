@@ -25,12 +25,12 @@ return {
 
       capabilities.workspace.workspaceFolders = true
 
-      local lspconfig = require("lspconfig")
+      -- local lspconfig = require("lspconfig")
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
       vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, opts)
       -- Lua Language Server
-      lspconfig.lua_ls.setup({
+      vim.lsp.config("lua_ls", {
         capabilities = capabilities,
         settings = {
           Lua = {
@@ -51,12 +51,12 @@ return {
       })
 
       -- C# Language Server
-      lspconfig.csharp_ls.setup({
+      vim.lsp.config("csharp_ls", {
         capabilities = capabilities
       })
 
       -- Python Language Server
-      lspconfig.pylsp.setup({
+      vim.lsp.config("pylsp", {
         capabilities = capabilities,
         settings = {
           pylsp = {
@@ -68,25 +68,24 @@ return {
           },
         },
       })
-
-      -- Tailwind CSS Language Server
-      lspconfig.tailwindcss.setup({
-        capabilities = capabilities
+      -- Tailwind CSS
+      vim.lsp.config("tailwindcss", {
+        capabilities = capabilities,
       })
 
-      -- PHP Language Server
-      lspconfig.phpactor.setup({
-        capabilities = capabilities
+      -- PHP
+      vim.lsp.config("phpactor", {
+        capabilities = capabilities,
       })
 
-      -- JavaScript
-      lspconfig.ast_grep.setup({
-        capabilities = capabilities
+      -- JavaScript / TypeScript
+      vim.lsp.config("ast_grep", {
+        capabilities = capabilities,
       })
-      lspconfig.ts_ls.setup({
-        capabilities = capabilities
+
+      vim.lsp.config("ts_ls", {
+        capabilities = capabilities,
       })
-      -- Add more language servers as needed
     end,
   }
 }

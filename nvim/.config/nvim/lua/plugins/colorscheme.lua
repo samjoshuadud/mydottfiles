@@ -9,15 +9,15 @@ return {
     config = function()
       require("tokyonight").setup({
         style = "night", -- storm, moon, or night
-        transparent = true,
+        transparent = true, -- important for making the neovim transparent and match with terminal color
         terminal_colors = true,
         styles = {
           comments = { italic = true },
           keywords = { italic = true },
           functions = {},
           variables = {},
-          sidebars = "transparent",
-          floats = "transparent",
+          sidebars = "transparent", -- made this transparent for terminal looking bg 
+          floats = "transparent", -- made this transparent for terminal looking bg 
         },
         sidebars = { "qf", "help", "neo-tree" },
         dim_inactive = false,
