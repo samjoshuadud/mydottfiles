@@ -7,3 +7,5 @@ alias adrienfetch 'clear && neofetch --config ~/.config/neofetch/adrien.conf --k
 alias rm 'trash-put'
 # Cava gradient support for Tmux
 alias cavax 'TERM=st-256color cava'
+
+alias v 'nvim'

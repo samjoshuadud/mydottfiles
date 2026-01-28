@@ -19,5 +19,9 @@ set -x PATH $JAVA_HOME/bin $PATH
 set -x GOPATH $HOME/go
 set -x PATH $GOPATH/bin $PATH
 
+set -x PATH /opt/lampp/bin $PATH
+
+fnm env --use-on-cd | source
+
 pokemon-colorscripts --no-title --random --shiny
 
