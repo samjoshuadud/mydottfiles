@@ -18,6 +18,7 @@ set -x PATH $PATH $ANDROID_HOME/platform-tools $ANDROID_HOME/tools $ANDROID_HOME
 set -x PATH $JAVA_HOME/bin $PATH
 set -x GOPATH $HOME/go
 set -x PATH $GOPATH/bin $PATH
+set -x TERM xterm-256color
 
 set -x PATH /opt/lampp/bin $PATH
 

@@ -5,7 +5,7 @@ ICON_CRITICAL="/usr/share/icons/Adwaita/symbolic/status/battery-level-0-symbolic
 ICON_FULL="/home/punisher/Downloads/batman.png" 
 
 SOUND_LOW="/usr/share/sounds/freedesktop/stereo/dialog-warning.oga"
-SOUND_CRITICAL="/usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga"
+SOUND_CRITICAL="/usr/share/sounds/freedesktop/stereo/dialog-warning.oga"
 SOUND_FULL="/usr/share/sounds/freedesktop/stereo/complete.oga"
 
 STATE_FILE="/tmp/battery_monitor_state"
