@@ -4,8 +4,9 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate", -- This command updates the parsers after installation
+    lazy = false, 
     config = function()
-      require'nvim-treesitter.configs'.setup {
+      require'nvim-treesitter.config'.setup {
         auto_install = true,
         highlight = {
           enable = true,              -- Enable highlighting
