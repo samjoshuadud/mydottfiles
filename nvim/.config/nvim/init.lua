@@ -30,7 +30,7 @@ require("config.lazy")         -- Lazy loading config
 require("plugins.colorscheme") -- Colorscheme setup
 require("plugins.telescope")   -- Telescope setup
 require("plugins.treesitter")  -- Treesitter setup
-require("plugins.neotree")     -- Neo-tree setup
+require("plugins.yazi")     -- Neo-tree setup
 require("plugins.lualine")     -- Lualine setup
 require("plugins.lsp-config")  -- LSP configuration
 require("plugins.none-ls")     -- None LSP plugin configuration
@@ -71,8 +71,4 @@ vim.keymap.set('n', 'gR', '<CMD>Glance references<CR>')
 vim.keymap.set('n', 'gY', '<CMD>Glance type_definitions<CR>')
 vim.keymap.set('n', 'gM', '<CMD>Glance implementations<CR>')
 
-
-
-
-
-
+vim.keymap.set("n", "<leader>r", "<cmd>Yazi resume<CR>")
