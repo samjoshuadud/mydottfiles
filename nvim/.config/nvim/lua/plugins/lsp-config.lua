@@ -56,22 +56,29 @@ return {
       })
 
       -- Python Language Server
-      vim.lsp.config("pylsp", {
-        capabilities = capabilities,
-        settings = {
-          pylsp = {
-            plugins = {
-              pylint = { enabled = true },
-              pyflakes = { enabled = false },
-              yapf = { enabled = true },
-            },
-          },
-        },
-      })
+      -- vim.lsp.config("pylsp", {
+      --   capabilities = capabilities,
+      --   settings = {
+      --     pylsp = {
+      --       plugins = {
+      --         pylint = { enabled = true },
+      --         pyflakes = { enabled = false },
+      --         yapf = { enabled = true },
+      --       },
+      --     },
+      --   },
+      -- })
       -- Tailwind CSS
       vim.lsp.config("tailwindcss", {
         capabilities = capabilities,
       })
+
+      vim.lsp.config("basedpyright", {
+        capabilities = capabilities,
+      })
+      -- vim.lsp.config("pyright", {
+      --   capabilities = capabilities,
+      -- })
 
       -- PHP
       vim.lsp.config("phpactor", {
